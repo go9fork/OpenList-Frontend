@@ -200,6 +200,14 @@ export const side_menu_items: SideMenuItem[] = [
     component: lazy(() => import("./storages/Storages")),
   },
   {
+    title: "manage.sidemenu.migration",
+    icon: BsArrowLeftRight,
+    to: "/@manage/migration",
+    role: UserRole.ADMIN,
+    backend: ["go"],
+    component: lazy(() => import("./Migration")),
+  },
+  {
     title: "manage.sidemenu.plugins",
     icon: FaSolidPuzzlePiece,
     to: "/@manage/plugins",
